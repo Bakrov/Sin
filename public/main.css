@@ -3,43 +3,51 @@ body{
     background-size: cover;
 }
 .main-menu {
-    padding: 0;
-    width: 95%;
-    margin: 0 auto;
-    opacity: 1;
-        
-}
-.main-menu {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.main-menu li {
 background: -moz-linear-gradient(left, #ffffff, #006666, #003333, #000000);
 background: -webkit-linear-gradient(left, #ffffff, #006666, #003333, #000000);
 background: -ms-linear-gradient(left, #ffffff, #006666, #003333, #000000);
 background: -o-linear-gradient(left, #ffffff, #006666, #003333, #000000);
 background: linear-gradient(to right, #ffffff, #006666, #003333, #000000);
-    padding: 10px;
-    width: 95%;
-    margin: 0 auto;
-    opacity: .5;
-    cursor: pointer;
-}
+    padding: 0;
+opacity: .5;
 
-.main-menu:hover {
+}
+.menu{
+background: -moz-linear-gradient(left, #ffffff, #006666, #003333, #000000);
+background: -webkit-linear-gradient(left, #ffffff, #006666, #003333, #000000);
+background: -ms-linear-gradient(left, #ffffff, #006666, #003333, #000000);
+background: -o-linear-gradient(left, #ffffff, #006666, #003333, #000000);
+background: linear-gradient(to right, #ffffff, #006666, #003333, #000000);
+    padding: 15px;
+    cursor: pointer;
+    height: auto; 
+    opacity: .5;  
+}
+.menu:hover{
+      opacity: .8;
+}
+.main-menu li {
+  background: -moz-linear-gradient(left, #ffffff, #006666, #003333, #000000);
+background: -webkit-linear-gradient(left, #ffffff, #006666, #003333, #000000);
+background: -ms-linear-gradient(left, #ffffff, #006666, #003333, #000000);
+background: -o-linear-gradient(left, #ffffff, #006666, #003333, #000000);
+background: linear-gradient(to right, #ffffff, #006666, #003333, #000000);
+    padding: 15px;
+    cursor: pointer;
+    height: auto;
+}
+.main-menu:hover{
     opacity: .8;
 }
-.menu {
-background: -moz-linear-gradient(left, #ffffff, #006666, #003333, #000000);
+
+.main-section {
+   background: -moz-linear-gradient(left, #ffffff, #006666, #003333, #000000);
 background: -webkit-linear-gradient(left, #ffffff, #006666, #003333, #000000);
 background: -ms-linear-gradient(left, #ffffff, #006666, #003333, #000000);
 background: -o-linear-gradient(left, #ffffff, #006666, #003333, #000000);
 background: linear-gradient(to right, #ffffff, #006666, #003333, #000000);
-padding: 10px;
-    width: 95%;
-    margin: 0 auto;
-    opacity: .5;
-    cursor: pointer;
+    padding: 15px;
+    width:70vw;
+
 }
+
