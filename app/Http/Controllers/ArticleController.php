@@ -18,7 +18,7 @@ class ArticleController extends Controller {
         if (is_null($articles)) {
             return redirect(route("article.get"));
         }
-        return view("article", ["article" => $article]);
+        return view("article", ["article"=>$article]);
     }
 
     public function xhrGet() {
@@ -30,7 +30,7 @@ class ArticleController extends Controller {
             $articles = Article::all();
             return response()->json($articles);
         }
-        $article = Articel::find($id);
+        $article = Article::find($id);
         if (is_null($article)) {
             return redirect(route("article.get"));
         }
