@@ -8,7 +8,7 @@
     @endforeach
     </ul>
 
-<from class="category-form" methcod="FOST" action="{{route("article.post")}}">
+<form class="category-form" method="POST" action="{{route("article.post")}}">
     <div class="form-group">
         <label>Title</label>
         <input type="text" name="title"class="form-control" placeholder="...">
@@ -21,7 +21,7 @@
      <input type="hidden" name="token" value="{{csrf_token()}}">
      <button type="submit" class="btn btn-default">Add article</button>
      <button type="reset" class="btn btn-default">Cancel</button>
-</from>
+</form>
      
     
 

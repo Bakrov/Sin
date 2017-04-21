@@ -5,7 +5,10 @@
         <meta charset="UTF-8">
         <link rel='stylesheet' href="{{asset('main.css')}}">
         <link rel='stylesheet' href="{{asset('bootstrap-3.3.7-dist/css/bootstrap.min.css')}}">
+        <script src="{{asset('jquery.min.js')}}"></script>
+        <script src="{{asset('skrypt.js')}}"></script>
     </head>
+            
     <body class="container-fluid">
         <div class="row">
             <div class="col-md-2"></div>
@@ -27,6 +30,7 @@
                     </section>
                 </div>
                 <footer>
+                    <button id="bgChanger" type="button" class ="btn btn-danger" onclick="changeBg('{{asset('2.jpg')}}','{{asset('1.jpg')}}')()">Change Background</button>
 
                 </footer>
 

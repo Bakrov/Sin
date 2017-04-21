@@ -1,9 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
 use App\Article;
+use App\Category;
 use App\Http\Requests;
 
 class ArticleController extends Controller {
@@ -45,10 +45,11 @@ class ArticleController extends Controller {
 
         $article = new Article();
         $category = Category::find($category_id);
+        $article->category()->associate ($category);
         $article->title = $title;
         $article->content = $content;
         $article->save();
-        return redirect(route("article.get", ["id" => $category_id]));
+        return redirect(route("category.get", ["id" => $category_id]));
     }
 
 }
